@@ -2,7 +2,9 @@ import { NextPage } from 'next';
 import { Era,Timeline } from '../../public/era';
 
 
-const Era:NextPage = () => {
+const Era = () => {
+
+
   const era1: Era[] = [
     {
         eraname: '東亞近代史',
@@ -36,3 +38,13 @@ const Era:NextPage = () => {
 }
 
 export default Era;
+
+export async function getStaticProps() {
+  //const req = await fetch('');
+  //const data = await req.json();
+  return {
+    props: {
+      //data,
+    },
+  };
+}
