@@ -1,0 +1,71 @@
+$font-size: 15px;
+$title-size: calc($font-size * 1.75);
+
+.root {
+  background-color: black;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: block;
+  max-width: min-content;
+  width: 100%;
+}
+.era {
+  font-size: $title-size;
+  white-space: nowrap;
+}
+
+
+.timeline {
+  display: block;
+  text-align: center;
+  margin-left: 2px;
+  margin-right: 2px;
+  max-height: $title-size;
+  padding-bottom: $font-size;
+}
+
+.event {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 5px;
+}
+.events {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.timelines {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+.textcolumn {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.thing {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  .year {
+    @extend .textcolumn;
+    color: #ffffff;
+    font-size: calc($font-size * 1);
+    margin-bottom: 2px;
+  }
+  .thing {
+    @extend .textcolumn;
+    font-size: calc($font-size * 1);
+    color: #fff27d;
+  }
+}
+
+.other {
+  @extend .textcolumn;
+  padding-top:calc($font-size * 4);
+  font-size: calc($font-size * 0.95);
+}
