@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import { Era,Timeline } from '../../public/era';
+import { Era,Timeline } from '../public/era';
 
 
 const Era = () => {
