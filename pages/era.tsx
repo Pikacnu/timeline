@@ -1,4 +1,3 @@
-import { NextPage } from 'next';
 import { Era,Timeline } from '../public/era';
 
 

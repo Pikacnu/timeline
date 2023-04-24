@@ -30,7 +30,7 @@ export const Timeline = ({ className ,eradata }: EraProps) => {
         let modifydescribe: string = describe? `(${describe})`: '';
 
         //set random color
-        const index = eradata.findIndex(obj => obj.eraname === eraname);
+        const index = eradata?.findIndex(obj => obj.eraname === eraname);
 
         const r = 255 - (index===0?0:Math.floor(Math.random() * 256));
         const g = 255 - (index===0?0:Math.floor(Math.random() * 256));
